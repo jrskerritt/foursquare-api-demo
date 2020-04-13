@@ -4,6 +4,7 @@ https://sleepy-bayou-96332.herokuapp.com/
 
 ## Prerequisites
 
+* [nodejs](https://nodejs.org/en/download/)
 * [yarn](https://yarnpkg.com/)
 
 ## Building and running the application
