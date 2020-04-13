@@ -104,3 +104,7 @@ Heroku made it quick and easy to set up a place to host the application. Also it
 ### Use ES5 in the server code to support older versions of Node.js
 
 You may notice the server-side code doesn't use any of the more modern ES6+ features that I used in the client code. This is because I wanted to make sure the server could run on older versions of Node.js, in case someone trying to run this application didn't have the latest one.
+
+## A note about the API keys
+
+For the sake of this assignment, the Foursquare API key and secret are simply stored in `config.js` in the server code. For a real application, these would not be in source control. Rather, the CI pipeline would add these keys to the necessary files as part of the build and deploy.
