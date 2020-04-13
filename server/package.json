@@ -9,5 +9,8 @@
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "query-string": "^6.12.0"
+  },
+  "scripts": {
+    "deploy": "git subtree push --prefix ./ heroku master"
   }
 }
