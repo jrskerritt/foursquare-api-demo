@@ -1,0 +1,11 @@
+.app .search-results__venues {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .app .search-results__venues {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,56 @@
+.app .search-input__form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.app .search-input__textbox {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.app .search-input__textbox input[type="text"] {
+  margin-bottom: 0;
+}
+
+.app .search-input__buttons {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.app .search-input__buttons button {
+  margin-right: 5px;
+  width: 150px;
+}
+
+.app .search-input__loading {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 200ms;
+  width: 100%;
+}
+
+.search-input__loading-bars {
+  left: 50%;
+  position: absolute;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .app .search-input__form {
+    flex-direction: row;
+  }
+
+  .app .search-input__textbox {
+    margin-right: 5px;
+    width: 400px;
+  }
+
+  .app .search-input__buttons {
+    width: auto;
+  }
+}

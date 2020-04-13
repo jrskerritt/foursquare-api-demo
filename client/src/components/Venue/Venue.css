@@ -1,0 +1,26 @@
+.app .venue {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.app .venue .venue__icon {
+  margin-right: 8px;
+}
+
+.app .venue .venue__name {
+  font-weight: 700;
+}
+
+.app .venue .venue__address {
+  font-size: small;
+}
+
+@media (min-width: 768px) {
+  .app .venue {
+    display: inline-flex;
+    margin-right: 15px;
+    width: 400px;
+  }
+}
