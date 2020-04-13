@@ -59,6 +59,8 @@ yarn test
 :white_check_mark: Use Jest for unit testing
 :white_check_mark: Use Foursquare API (https://developer.foursquare.com/docs/) to get a list of places by location
 
+### Bonus
+
 :white_check_mark: Use location services to detect current location
 :white_check_mark: Make the web app responsive
 :x: Paginate the results of your search
