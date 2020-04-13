@@ -2,8 +2,6 @@
   "name": "foursquare-api-demo",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/jrskerritt/foursquare-api-demo.git",
-  "author": "Jim Skerritt <jrskerritt@gmail.com>",
   "license": "MIT",
   "scripts": {
     "deploy": "git subtree push --prefix server heroku master"
