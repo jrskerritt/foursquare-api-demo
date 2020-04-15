@@ -56,15 +56,21 @@ yarn test
 ## Requirements
 
 :white_check_mark: Use React to build client app
+
 :white_check_mark: Use your web server of choice (Express)
+
 :white_check_mark: Use Jest for unit testing
+
 :white_check_mark: Use Foursquare API (https://developer.foursquare.com/docs/) to get a list of places by location
 
 ### Bonus
 
 :white_check_mark: Use location services to detect current location
+
 :white_check_mark: Make the web app responsive
+
 :x: Paginate the results of your search
+
 :white_check_mark: Make the web app hosted and publically accessible (https://sleepy-bayou-96332.herokuapp.com/)
 
 ## Design decisions
