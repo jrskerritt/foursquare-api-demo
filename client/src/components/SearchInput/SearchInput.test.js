@@ -79,3 +79,19 @@ test('fires a geolocation search when "use my location" is clicked', async () =>
     expect(onSearchComplete).toHaveBeenCalledWith('your location', expect.anything());
   });
 });
+
+test('url encodes the search term', async () => {
+  const searchTerm = '&test';
+  const onSearchComplete = jest.fn();
+
+  render(<SearchInput onSearchComplete={onSearchComplete} />);
+
+  const searchInput = screen.getByPlaceholderText(/Enter a city/i);
+  fireEvent.change(searchInput, { target: { value: searchTerm } });
+  await waitFor(() => screen.getByDisplayValue(searchTerm));
+  
+  fireEvent.click(screen.getByText('Search'));
+  await waitFor(() => {
+    expect(fetch).toHaveBeenCalledWith(expect.stringContaining('%26test'));
+  });
+});

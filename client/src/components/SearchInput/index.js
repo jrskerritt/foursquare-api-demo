@@ -33,7 +33,7 @@ export function SearchInput({ onSearchComplete }) {
       return;
     }
 
-    return fetchSearchResults(`${searchEndpointUrl}?near=${searchTerm}`, searchTerm);
+    return fetchSearchResults(`${searchEndpointUrl}?near=${encodeURIComponent(searchTerm)}`, searchTerm);
   }
 
   const onKeyPress = e => {
