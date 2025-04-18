@@ -1,3 +1,5 @@
+# 🗒️ Disclaimer: This is a take-home assignment for a job application from 2020 and does not reflect how I would build web application today.
+
 # Foursquare API Demo
 
 https://sleepy-bayou-96332.herokuapp.com/
